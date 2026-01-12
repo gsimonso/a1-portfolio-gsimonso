@@ -1,5 +1,4 @@
 --Readme document for Genevieve Simonson, gsimonso@uci.edu--
-#testing commit as UCI account??
 
 A reminder on academic integrity, as described in the syllabus.
 
