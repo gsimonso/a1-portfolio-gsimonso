@@ -22,15 +22,20 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
+ 1. an image with descripitve alternative attributes
+ 2. headings and paragraph text
+ 3. links to external pages
+ 4. multiple pages with navigation between them
 
 
 (b) CSS features
-
+ 1. modify padding and margins
+ 2. modify link text color/other colors
+ 3. custom fonts
 
 
 (c) Advanced features
-
+ 1. embedded media
 
 
 
@@ -52,4 +57,5 @@ Referenced this video for how to create a basic navigation bar: https://www.yout
 
 
 7. Is there anything special we need to know in order to run your code?
-
+For the Instagram and Youtube links to show the content you need to run using http/https on localhost.
+Run pythom -m http.server and visit http://localhost:8000 on your broswer
