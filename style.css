@@ -1,3 +1,4 @@
+/* custom fonts */
 @font-face {
   font-family: "LaBelleAurore";
   src: url("./fonts/LaBelleAurore-Regular.woff2") format("woff2"),
@@ -16,11 +17,47 @@
   font-display: swap;
 }
 
-body {
+/* background of page */
+body, html {
     background-color: #2E4D44;
+    margin: 0;
+    padding: 0;
 }
 
+/* default headers and font styles */
+h1 {
+    color: #f5f5dc;
+    font-family: "LaBelleAurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 6vw;
+}
+
+h3{
+    color: #f5f5dc;
+    font-family: "GamjaFlower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+p {
+    color: #f5f5dc;
+    font-family: "GamjaFlower", cursive;
+    font-size: 2vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar Styling */
 .navbar {
+    position:sticky;
+    top: 0;
+    width: 100%;
     background-color: #f5f5dc;
     font-family: "GamjaFlower", cursive;
     padding-right: 15px;
@@ -34,50 +71,89 @@ body {
     justify-content: space-evenly;   
 }
 
-.splashpage {
-    position: relative;
-}
-
-.bkgrnd {
-    width: 100%;
-    height: 100%;
-}
-
-.foreground {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 100px;
-    height: 100px;
-}
-
-h1 {
-    color: #f5f5dc;
-    font-family: "LaBelleAurore", cursive;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 64px;
-}
-
-p {
-    color: #f5f5dc;
-    font-family: "GamjaFlower", cursive;
-}
-
-/* Navigation Bar Styling */
-ul {
+/* Navigation bar individual tabs */
+.navdiv ul {
     list-style-type: none;
 }
-li { 
+
+.navdiv li { 
     float: left;
 }
-li a {
+
+.navdiv li a {
     display:block; 
     background-color: #2E4D44;
     color: #f5f5dc;
     text-align:center;
     padding: 14px 16px; 
     text-decoration: none;
-    font-size: 48px;
+    font-size: 3vw;
+}
+
+.navbar ul li a.active {
+    background-color: #be8457;
+}
+
+.navbar ul li a:hover {
+    background-color:#be8457e3;
+}
+
+/* typewriter animation */
+.typewriter {
+    text-align: center;
+
+}
+
+.typewriter h1{
+    /* font-size: 6vw; */
+    display: inline-block;
+    overflow: hidden;
+    border-right: .05em solid #f5f5dc;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .17em;
+    animation:
+        typing 3.5s steps(30,end),
+        blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 17ch; }
+}
+
+@keyframes blinking-cursor {
+    from, to {border-color: transparent}
+    50% { border-color: #f5f5dc;}
+}
+
+/* decorative images */
+.splash {
+    position: static;
+    top: 0;
+    left: 0;
+}
+.splash img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.splash_btm{
+    position: static;
+    bottom: 0;
+    right: 0;
+}
+.splash_btm img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* headshot photo */
+.headshot {
+    padding-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
