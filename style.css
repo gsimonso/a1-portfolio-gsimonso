@@ -31,7 +31,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 6vw;
+    font-size: 8vw;
 }
 
 h3{
@@ -39,13 +39,29 @@ h3{
     font-family: "GamjaFlower", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 5vw;
+}
+
+h4 {
+    color: #f5f5dc;
+    font-family: "GamjaFlower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+
 }
 
 p {
     color: #f5f5dc;
     font-family: "GamjaFlower", cursive;
-    font-size: 2vw;
+    font-size: 3vw;
+}
+
+ul {
+    color:#f5f5dc;
+    font-family: "GamjaFlower", cursive;
+    font-size: 3vw;
+
 }
 
 img {
@@ -156,4 +172,18 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Resume Section Styling */
+.resume_section {
+    display: block;
+    margin-left: 5%;
+}
+
+.resume_section h3 a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+.resume_section h3 a:hover {
+    color:#be8457;
 }
