@@ -175,9 +175,13 @@ img {
 }
 
 /* Resume Section Styling */
-.resume_section {
+.resume_section h3 {
     display: block;
     margin-left: 5%;
+}
+
+.resume_section h4,p,ul {
+    margin-left: 10%;
 }
 
 .resume_section h3 a {
@@ -186,4 +190,29 @@ img {
 }
 .resume_section h3 a:hover {
     color:#be8457;
+}
+
+/* Project Page Styling */
+.project img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project a {
+    font-family: "GamjaFlower", cursive;
+    font-size: 3vw;
+    color: #f5f5dc;
+    display: block;
+    text-align: center;
+}
+
+.project a:hover {
+    color: #be8457;
+}
+
+/* Hobbies Page Styling */
+.instagram, .embed{
+    display: flex;
+    justify-content: center;
 }
