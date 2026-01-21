@@ -17,11 +17,16 @@
   font-display: swap;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* background of page */
 body, html {
     background-color: #2E4D44;
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 
 /* default headers and font styles */
@@ -31,7 +36,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 8vw;
+    font-size: 48px;
 }
 
 h3{
@@ -39,7 +44,7 @@ h3{
     font-family: "GamjaFlower", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 5vw;
+    font-size: 40px;
 }
 
 h4 {
@@ -47,20 +52,20 @@ h4 {
     font-family: "GamjaFlower", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 36px;
 
 }
 
 p {
     color: #f5f5dc;
     font-family: "GamjaFlower", cursive;
-    font-size: 3vw;
+    font-size: 24px;
 }
 
 ul {
     color:#f5f5dc;
     font-family: "GamjaFlower", cursive;
-    font-size: 3vw;
+    font-size: 24px;
 
 }
 
@@ -76,15 +81,15 @@ img {
     width: 100%;
     background-color: #f5f5dc;
     font-family: "GamjaFlower", cursive;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .navdiv{
     display: flex; align-items: center;
     justify-content: space-evenly;   
+}
+
+.logo{
+    padding-left: 5%;
 }
 
 /* Navigation bar individual tabs */
@@ -144,12 +149,12 @@ img {
 }
 
 /* decorative images */
-.splash {
+.splash_top {
     position: static;
     top: 0;
     left: 0;
 }
-.splash img {
+.splash_top img {
     width: 100%;
     height: auto;
     display: block;
@@ -182,6 +187,7 @@ img {
 
 .resume_section h4,p,ul {
     margin-left: 10%;
+    margin-right: 5%
 }
 
 .resume_section h3 a {
@@ -201,7 +207,7 @@ img {
 
 .project a {
     font-family: "GamjaFlower", cursive;
-    font-size: 3vw;
+    font-size: 36px;
     color: #f5f5dc;
     display: block;
     text-align: center;
@@ -209,6 +215,11 @@ img {
 
 .project a:hover {
     color: #be8457;
+}
+
+.project img {
+    width: 50%;
+    height: auto;
 }
 
 /* Hobbies Page Styling */
